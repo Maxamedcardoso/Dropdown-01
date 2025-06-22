@@ -184,12 +184,14 @@ hr{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: -10px;
     }
     nav ul li{
-        margin: 10px 10px;
+        margin: 10px 9px;
+        padding-left: 6px;
     }
     li{
-        font-size: 14px;
+        font-size: 16px;
     }
     
 }
