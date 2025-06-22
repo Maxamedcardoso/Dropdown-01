@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop-down</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="/img/124_750x750_Front_Color-NA-removebg-preview.png"   class="logo" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <img src="./img/3d-icon-travel-with-man-removebg-preview.png" class="profile" onclick="toggle_drop()"  alt="">
+             <div class="dropdown " id="drop-down">
+            <div class="sub-dropdown">
+                <div class="userinfo">
+                    <img src="./img/3d-icon-travel-with-man-removebg-preview.png"  alt="">
+                    <h3>mohamed dahir abdilahi</h3>
+                </div>
+                <hr>
+                <a href="#" class="dropdown-link">
+                    <img src="/img/user-fill.png" alt="" srcset="">
+                    <p>edit profile</p>
+                    <span>></span>
+                   
+                </a>
+                <a href="#" class="dropdown-link">
+                    <img src="/img/settings-2-line.png" alt="" srcset="">
+                    <p>setting & privacy</p>
+                    <span>></span>
+                   
+                </a>
+                <a href="#" class="dropdown-link">
+                    <img src="/img/question-fill.png" alt="" srcset="">
+                    <p>help & support</p>
+                    <span>></span>
+                   
+                </a>
+                <a href="#" class="dropdown-link">
+                    <img src="./img/logout-circle-r-line.png" alt="" srcset="">
+                    <p>logout</p>
+                    <span>></span>
+                   
+                </a>
+            </div>
+        </div>
+        </nav>
+       
+    </div>
+    <script>
+     let dropdowns=document.getElementById('drop-down');
+     function toggle_drop(){
+     dropdowns.classList.toggle("open")
+
+     }
+    </script>
+</body>
+</html>
